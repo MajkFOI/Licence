@@ -1,0 +1,28 @@
+Uloge:
+-Neregistrirani korisnik
+-Registrirani korisnik
+-Moderator / Vlasnik licence
+-Administrator
+
+Upute:
+
+Administrator
+-Kreira kategorije licenci (Operacijski sustav, Aplikacije, …) i dodjeljuje moderatore kategoriji.
+-Kreira licence (Windows, Visual Studio, ….), gdje odabire kategoriju, unosi naziv, opis te postavlja sliku.
+-Odobrava ili odbija zahtjeve za kupnjom licence. Odobren/odbijen zahtjev za kupnjom licence ima datum i vrijeme odobravanja/odbijanja.
+-Pregledava statistike zahtjeva kupnje (odobrenih/neodobrenih) u nekom razdoblju po kategoriji licence uz mogućnost da se odabere kategorija i onda se dobiju podaci po pojedinoj licenci.
+
+Moderator
+-Kreira zahtjev kupnjom licence pri čemu obavezno odabire licencu. Definirajući količinu, iznos koji je spreman platiti i datum od kad i do kad one vrijede. Jednom naručena količina se ne može povećavati. Ne može unijeti datum od manji od trenutnog datuma i licenca mora imati valjanost barem 2 dana.
+-Pregledava i odobrava zahtjeve za korištenjem licence. Odobravanjem zahtjeva generira se nasumični ključ. Ne može odobriti više zahtjeva nego što ima raspoloživih licenci.
+-Vidi popis korisnika koji koriste njegove licence s terminima od kad i do kad one vrijede. Valjane licence su na vrhu.
+
+Registrirani korisnik
+-Kreira zahtjev za korištenjem licence. Može odabrati samo licence koje su trenutno važeće ili koje će biti važeće u budućnosti.
+-Pregledava zahtjeve za korištenjem licence sa statusom (prihvaćeno, odbijeno, vraćeno) i ključem. Ključ je sakriven ako licenca ne vrijedi (prije ili poslije datuma) ili je vraćena.
+-Može vratiti zaduženu licencu čime ona postaje ponovno slobodna, ne može vratiti licencu koja vrijedi manje od 3 dana.
+
+Neregistrirani korisnik
+-Može pretraživati licence uz mogućnost filtriranja po kategoriji. Svaki element ima dvije poveznice na kategoriju i licencu
+-Vidi informacije o licenci sa slikom.
+-Vidi informacije o kategoriji licenci.
