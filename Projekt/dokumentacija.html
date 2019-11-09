@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>  
+        <title> Dokumentacija </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Meikl Marić">
+        <meta name="keywords" content="Registracija, slanje podataka, post ">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mmaric_1100.css" media="(max-width: 1100px)">
+        <link rel="stylesheet" type="text/css" href="css/mmaric_960.css" media="(max-width: 960px)">
+        <link rel="stylesheet" type="text/css" href="css/mmaric_780.css" media="(max-width: 780px)">
+        <link rel="stylesheet" type="text/css" href="css/mmaric_480.css" media="(max-width: 480px)">
+
+    </head>
+    <body>
+     <header id="headerRegistracija">
+         <div class = "container">
+             <h2> <span class = "zutiTekst"> Dokumentacija </span></h2>
+             <nav>
+                 <ul>
+                     <li><a href="index.php"> Početna </a></li>
+                     <li><a href="o_autoru.html"> O autoru </a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+    <section>
+        <div class="container">
+            <div style="width:70%; margin:auto">
+                <h3> Opis projektnog zadatka </h3>
+                <p>
+                    Potrebno je bilo napraviti web aplikaciju sa različitim ulogama korisnika u kojoj će se moći evidentirati licence za različite kategorije programa. <br>
+                    Gostu stranice (neregistriranom korisniku) je trebalo omogućiti pregledavanje svih licenci i njihovo filtriranje, te pregled informacija o licenci i kategoriji.<br>
+                    Registrirani korisnik treba moći kreirati zahtjev za korištenjem licence i pregledati svoje licence. Osim toga, može i vratiti licencu.
+                    Moderator može napraviti zahtjev za kupnju neke licence, te pregledavati licence koje posjeduje i koji ih korisnici koriste.
+                    Administrator može kreirati kategorije licenci, te kreirati i samu licencu. Osim toga, može i pregledavati (odobriti i odbiti) zahtjeve za kupnju, te vidjeti
+                    statistiku zahtjeva kupnje.
+                </p>
+            </div>
+            <div style="width:70%; margin:auto">
+                <h3> ERA </h3>
+                <img src="slike/era.jpg" alt="ERA">
+            </div>
+            <div style="width:70%; margin:auto">
+                <h3> Popis i opis skripata </h3>
+                <p>
+                    index.php - Prikaz svih licenci za koje se mogu poslati zahtjevi za korištenje, te mogućnost njihovog filtriranja i pretaživanje (AJAX)<br>
+                    Aktivacija.php - Skripta koja odobrava novoregistriranom korisniku da se prijavi ukoliko uđe s ispravnim kodom poslanim na email adresu<br>
+                    Dnevnik.php - Skripta koja administratoru omogućuje pregled i pretraživanje dnevnika<br>
+                    KategorijaPopis.php - Skripta sa popisom svih kategorija i gumbom "Uredi"<br>
+                    KategorijaUnos.php - Skripta koja administratoru omogućuje unos nove kategorije<br> 
+                    KategorijaUredi.php - Skripta koja administratoru omogućuje uređivanje postojeće kategorije<br> 
+                    Konfiguracija.php - Skripta koja administratoru omogućuje uređivanje konfiguracije (straničenje i trajanje kolačića)<br>
+                    Korisnici.php - Skripta koja ispisuje sve korisnike iz baze (XML)<br>
+                    LicencaKoristenjeZahtjevi.php - Skripta koja moderatoru omogućuje odobravanje i odbijanje zahtjeva za korištenje<br>
+                    LicencaKupnjaZahtjev.php - Skripta koja korisniku omogućuje unos podataka za kupnju licence<br>
+                    LicencaKupnjaZahtjevi.php - Skripta koja administratoru omogućuje odobravanje i odbijanje zahtjeva za kupnju<br>
+                    LicencaPopis.php - Skripta koja administratoru omogućuje prikaz svih licenci<br>
+                    LicencaUnos.php - Skripta koja administratoru omogućuje unos nove licence<br>
+                    LicencaUredi.php - Skripta koja administratoru omogućuje uređivanje postojeće licence<br>
+                    Licence.php - Skripta koja ispisuje licence koje sadrže u nazivu ključnu riječ i za određenu kategoriju (XML)<br>
+                    MojiKorisniciLicenci.php - Skripta koja moderatoru ispisuje korisnike koji koriste njegove licence<br>
+                    MojiKoristenjeZahtjevi.php - Skripta koja korisniku ispisuje sve licence koje može koristiti sa gumbom "Vrati"<br>
+                    MojiKupnjaZahtjevi.php - Skripta koja moderatoru ispisuje sve licence koje je kupio<br>
+                    PopisBlokiranih.php - Skripta koja administratoru ispisuje sve korisnike koji su blokirani sa gumbom "Odblokiraj"<br>
+                    PopisKorisnika.php - Skripta koja administratoru ispisuje sve korisnike sa gumbom "Blokiraj" i gumbom "Napravi moderatorom"<br>
+                    Statistika.php - Skripta koja administratoru ispisuje statistiku zahtjeva kupnje sa mogućnošću filtiranja (AJAX)<br>
+                    StatistikaXML.php - Skripta koja ispisuje sve zahtjeve kupnje za određenu kategoriju<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>

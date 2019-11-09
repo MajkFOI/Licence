@@ -1,0 +1,346 @@
+body{
+    margin: 0;
+    background: lightgrey;
+    font-family: Helvetica;
+}
+
+.container{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.zutiTekst{
+    color: yellow;
+}
+
+/* Header */
+
+/* Dropdown */
+.dropdown{
+    display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+  text-transform: none;
+  text-align: center;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropbtn:hover {color: yellow }
+
+header{
+    background: #303033;
+    color: #ffffff;
+    border-bottom: 4px solid #f2de2e;
+    animation: promjenaBojeHeadera 3s 1;
+}
+#headerRegistracija nav{
+    position: relative;
+    animation: projmenaPozicijeNavigacije 3s;
+}
+#headerPrijava h2{
+    position: relative;
+    animation: pomicanjeNaslova 2s 2;
+}
+#headerObrazac h2{
+    animation: razmakSlova 2s 2; 
+}
+#headerPopis h2{
+    position: relative;
+    animation: skakanjeSlova 1s 2; 
+    animation-delay: 1s;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+header ul{
+    float: right;
+    margin-top: 25px;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+header a:hover{
+    color: yellow;
+}
+
+header h2{
+    float: left;
+}
+
+/* @ */
+@keyframes promjenaBojeHeadera {
+    from {background-color: lightgrey;}
+    to {background-color: #303033;}
+}
+
+@keyframes projmenaPozicijeNavigacije {
+  from {right: -500px;}
+  to {right: 0px;}
+}
+@keyframes pomicanjeNaslova {
+  0%   {left:0px; top:0px;}
+  50%  {left:200px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+@keyframes razmakSlova {
+  0%   {letter-spacing: 0px;}
+  50%  {letter-spacing: 4px;}
+  100% {letter-spacing: 0px;}
+}
+@keyframes skakanjeSlova {
+  0%   {top: 0px;}
+  25%  {top: -10px;}
+  50%  {top: 0px;}
+  75%  {top: -10px;}
+  100% {top: 0px;}
+}
+
+/* INDEX: Sekcija 1 */
+
+#slika_autora{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid grey;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+    min-height: 200px;
+    max-height: 420px;
+    max-width: 400px;
+}
+
+#slika_autora img{
+    width: 100%;
+}
+
+#sekcija1{
+    margin-top: 20px;
+}
+
+#sekcija1 ul{
+    box-sizing: border-box;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#sekcija1 li{
+    margin-top: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#autor{
+    float: left;
+    width: 65%;
+    margin-left: 20px;
+}
+
+#autor ul{
+    font-size: 20px;
+}
+
+#predstavljanje{
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.4;
+    border: 2px solid grey;
+    border-radius: 10px;
+    overflow: auto;
+    width: 65%;
+    float:left;
+}
+
+#predstavljanje h3{
+    margin-top: 0;
+}
+
+#predstavljanje:hover {
+    background-color: rgb(255, 255, 255, 0.6);
+    border-color: white;
+}
+
+/* INDEX: Sekcija 2 */
+#sekcija2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #303033;
+    color: white;
+}
+.kutija{
+    padding-right: 25px;
+    padding-left: 25px;
+    float: left;
+    box-sizing: border-box;
+    width: 33%;
+    text-align: justify;
+    cursor: pointer;
+}
+.ciscenjeFloata{
+    clear: both;
+}
+
+/* Footer */
+footer{
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+footer .container{
+    width: 60%;
+}
+
+footer .kutija{
+    overflow: hidden;
+    text-align: center;
+}
+
+#fiksiranFooterRegistracija, #fiksiranFooterPrijava, #fiksiranFooterPopis{
+    bottom: 0; 
+    position: absolute; 
+    width: 100% ; 
+    background-color: #303033; 
+    color:white;
+}
+#fiksiranFooterRegistracija .container .kutija, #fiksiranFooterPrijava .container .kutija, #fiksiranFooterPopis .container .kutija{
+    text-align: center;
+}
+
+
+
+/* REGISTRACIJA I PRIJAVA I OBRAZAC */
+#form1{
+    margin: 0 auto;
+    width: 30%;
+}
+#form1 label{
+    display: block
+}
+#form1 input, select{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#form1 label{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.odjeljak{
+    padding-bottom: 15px;
+}
+.odjeljak:first-child{
+    margin-top: 30px;
+}
+
+.odjeljak input, select{
+    width: 100%;
+    padding: 5px;
+}
+.odjeljak input[type="checkbox"]{
+    width: auto;
+}
+.odjeljak input[type="radio"]{
+    width: auto;
+}
+#gumbOdjeljak{
+    text-align: center;
+}
+
+#submit1, #reset{
+    width: 120px;
+    margin: 0 auto;
+    padding:10px;
+    color: white;
+    border: 1px solid #303033;
+    background-color: #303033;
+    border-radius: 10px;
+}
+#submit1:hover, #reset:hover{
+    cursor: pointer;
+    color: yellow;
+}
+#reset{
+    margin-left:5px;
+}
+
+
+/* Prikaz licenci */
+
+.kutija:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.kutija:hover .gumb1{
+    display: block;
+}
+
+.gumb1{
+    cursor: pointer;
+    display: none;
+    color: white;
+    background-color: #555555;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 16px;
+}
+.gumb1:hover{
+    background-color: black;
+}
+
+
+/* stranicenje */
+
+.pagination a{
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

@@ -1,0 +1,34 @@
+
+#form1{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.kutija{
+    width: 50%;
+}
+.kutija img{
+    width: 100px;
+}
+.ciscenjeFloata{
+    display: none;
+}
+
+footer .container{
+    width: 100%;
+}
+
+footer .kutija{
+    margin: auto;
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#fiksiranFooterPrijava, #fiksiranFooterPopis{
+    position: relative;
+    margin-top: 20px;
+}
+
+
+

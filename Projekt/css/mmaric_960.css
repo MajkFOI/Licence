@@ -1,0 +1,80 @@
+
+header .container{
+    width: 100%;
+}
+header h2{
+    float: none;
+    text-align: center;
+}
+header ul{
+    margin-top: 5px;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+}
+header ul li{
+    display: inline-block;
+}
+
+#slika_autora{
+	width: 40%;
+}
+#autor{
+    width: 40%;	
+    margin-left: 15px;
+    margin-top: 7%;
+}
+#predstavljanje{
+    margin: 0;
+    margin-bottom: 10px;
+    float: none;
+    width: 100%;
+}
+
+/* CSS GRID - multimedija */
+
+.gridHeader .container{
+    width: 100%;
+}
+.gridHeader h2{
+    float: none;
+    text-align: center;
+}
+.gridHeader ul{
+    margin-top: 5px;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+}
+.gridHeader ul li{
+    display: inline-block;
+}
+.gridGlavniDio figure{
+    margin: 20px auto;
+}
+.gridSporedniDio{
+   grid-area: main;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    grid-template-columns: 100%; 
+    display: block;
+}
+
+.gridFooter{
+    margin-top: 20px;
+}
+
+/* FOOTER */
+#fiksiranFooterRegistracija{
+    position: relative;
+    margin-top: 20px;
+}
+
+footer .container{
+    width: 80%;
+}

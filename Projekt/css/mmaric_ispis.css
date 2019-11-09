@@ -1,0 +1,28 @@
+header{
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table caption{
+    font-size: 20px;
+}
+
+thead tr{
+    font-size:18px;
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+    color: white;
+}

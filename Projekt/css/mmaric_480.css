@@ -1,0 +1,93 @@
+header .container{
+	width: 100%;
+}
+header ul{
+	margin: 0;
+	padding-left: 0;
+	text-align: center;
+}
+header ul li{
+	display: inline-block;
+}
+
+header h2{
+	float: none;
+	text-align: center;
+}
+
+#slika_autora{
+	width: 100%;
+	margin: auto;
+}
+
+#autor, #slika_autora{
+	float: none;
+}
+#autor{
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 100%;
+}
+#autor ul{
+	margin-left: 10px;
+}
+#predstavljanje{
+    border: none;
+    background-color: #363a3a;
+    color: white;
+    max-height: none;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 0;
+}
+#predstavljanje:hover{
+    color: black;
+}
+
+#sekcija1{
+	max-height: none;
+}
+#sekcija1 .container{
+	width: 100%;
+}
+
+/* Sekcija 2 */
+
+.kutija{
+	float:none;
+	width: 100%;
+	padding: 20px;
+	margin-top: 10px;	
+}
+.kutija h2{
+	margin-top: 0;
+}
+
+#sekcija2{
+	margin-top: 0;
+	background-color: lightgrey;
+	color: black;
+}
+#sekcija2 .container{
+	width: 90%;
+}
+
+/* REGISTACIJA I PRIJAVA */
+#form1{
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* Footer */
+footer{
+	background-color: #363a3a;
+	color: white;
+}
+
+footer a{
+    color: white;
+}
+#fiksiranFooterRegistracija, #fiksiranFooterPrijava{
+    position: relative;
+    margin-top: 20px;
+}
